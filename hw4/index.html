@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> A Little About Progressive Web Apps aka (PWAs)</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8 pt-5">
+    <h1>Progressive Web Apps (PWAs) </h1>
+  </div>
+  </div>
+    <div class="row justify-content-center">
+      <div class="col-8 pt-3">
+        <p>From the class lecture, a <strong>Progressive Web App</strong> is a methodology that combines different technologies to make powerful web applications. Additionally, according to Google Chrome engineer Alex Russell, <em>"It is a set of best practices to make a web application function similar to a desktop or mobile application. The dream is to have an experience so uniform and seamless that the user is unable to tell the difference between a Progressive Web App and a native mobile app".</em></p>
+<p>Progressive Web Apps tend to be:</p>
+
+<ul>
+  <li>Fast - you can cache the data and start the app without having to fetch data from the network </li>
+  <li>Integrated user experiecne - PWAs behave like native apps, sit in the phone's home screen and sends push notifications</li>
+  <li>Reliable experience - using service workers, certain data is cached if network connection is lost</li>
+  <li>Engaging - using push notifications, the user is always engaged with the app</li>
+</ul>
+
+<select id="background-selector" class="custom-select" onchange="changeBkgdColor()">
+  <option selected>Please select a background</option>
+  <option class="lt-blue" value="lt-blue">Light blue</option>
+  <option class="lt-gold" value="lt-gold">Light gold</option>
+
+</select>
+  </div>
+  </div>
+  </div>
+
+
+</body>
+<script src="app.js"></script>
+</html>
