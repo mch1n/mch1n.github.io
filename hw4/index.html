@@ -23,6 +23,13 @@
     <div class="row justify-content-center">
       <div class="col-8 pt-3">
         <p>From the class lecture, a <strong>Progressive Web App</strong> is a methodology that combines different technologies to make powerful web applications. Additionally, according to Google Chrome engineer Alex Russell, <em>"It is a set of best practices to make a web application function similar to a desktop or mobile application. The dream is to have an experience so uniform and seamless that the user is unable to tell the difference between a Progressive Web App and a native mobile app".</em></p>
+        <p>
+        <select id="background-selector" class="custom-select" onchange="changeBkgdColor()">
+          <option selected>Please select a background</option>
+          <option class="lt-blue" value="lt-blue">Light blue</option>
+          <option class="lt-gold" value="lt-gold">Light gold</option>
+        </select>
+      </p>
 <p>Progressive Web Apps tend to be:</p>
 
 <ul>
@@ -32,12 +39,16 @@
   <li>Engaging - using push notifications, the user is always engaged with the app</li>
 </ul>
 
-<select id="background-selector" class="custom-select" onchange="changeBkgdColor()">
-  <option selected>Please select a background</option>
-  <option class="lt-blue" value="lt-blue">Light blue</option>
-  <option class="lt-gold" value="lt-gold">Light gold</option>
+<p>Basic requirements to create a PWA:</p>
+<ul>
+  <li>a manifest file — manifest.json: It has meta information about the app like icon name, background color, the name of the app, etc. </li>
+  <li>service worker with at least a fetch event — serviceworker.js: A service worker will help us cache data and fetch resources. </li>
+  <li>icon — various sizes which a user sees after installing it in their app drawer</li>
+  <li>served over HTTPS: It establishes your web application as a trusted site for users demonstrating trust and reliability, and avoiding middle man attacks.</li>
+</ul>
+<p><em>Source: <a href="https://www.freecodecamp.org/news/progressive-web-apps-101-the-what-why-and-how-4aa5e9065ac2/">https://www.freecodecamp.org/news/progressive-web-apps-101-the-what-why-and-how-4aa5e9065ac2/</a></em></p>
 
-</select>
+
   </div>
   </div>
   </div>
