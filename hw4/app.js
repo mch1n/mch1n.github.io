@@ -20,3 +20,8 @@ if (navigator.serviceWorker) {
 } else {
     console.log('Service Worker is not supported in this browser.')
 }
+
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  e.prompt();
+});
