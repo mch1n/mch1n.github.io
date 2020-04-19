@@ -1,0 +1,37 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #c2e3c4;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 0.5rem;
+}
+
+img  {
+  width: 750px;
+}
+
+.back {
+  background: black;
+  width: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+a {
+  color: gray;
+}
