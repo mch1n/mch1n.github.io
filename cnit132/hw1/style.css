@@ -11,17 +11,71 @@ body {
   text-align: left;
 }
 
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media only screen and (max-width:735px) {
+.wrapper {
+  margin: 0 auto;
+  max-width: 87.5%;
+}
+}
+
+header {
+  order: 1;
+  flex: 0 1 100%;
+}
+
+header h1 {
+  text-align: center;
+}
+
+nav {
+  order: 2;
+  flex: 0 1 250px;
+}
+
+@media only screen and (max-width:735px) {
+  nav {
+  flex: 0 1 100%;
+  }
+}
+
 nav ul {
   list-style-type: none;
-  display: flex;
 }
 
 nav ul li {
   padding: 0.5rem;
 }
 
-img  {
+.main_content {
+  order: 3;
+  min-height: 400px;
+  flex: 1;
+  margin: 0 auto;
+}
+
+footer {
+  order: 4;
+  min-height: 100px;
+  flex: 0 1 100%;
+}
+
+footer p {
+  text-align: center;
+}
+
+img {
   width: 150px;
+}
+
+@media only screen and (max-width: 480px) {
+  .img {
+    max-width: 100%;
+  }
 }
 
 .back {
@@ -29,9 +83,37 @@ img  {
   width: 100px;
   border-radius: 10px;
   padding: 10px;
-  margin: 0 auto;
 }
 
 a {
   color: gray;
+}
+
+form label {
+  float: left;
+  width: 100px;
+}
+
+form input#fullname, input#email, textarea {
+  font-size: 1rem;
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  padding: 5px;
+  border: 0;
+}
+
+form input#submit {
+  width: 100px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+
+  form label,
+  form input,
+  form textarea {
+    max-width: 100%;
+  }
 }
