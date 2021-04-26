@@ -1,0 +1,30 @@
+{
+  "events": [
+    {
+      "Title": "Highlights of ASP.NET",
+      "Location": "Room 102",
+      "Time": "10:00am"
+    },
+    {
+      "Title": "Pros of ASP.NET",
+      "Location": "Online",
+      "Time": "1:00pm"
+    },
+    {
+      "Title": "Cons of ASP.NET",
+      "Location": "Room 420",
+      "Time": "3:00pm"
+    },
+    {
+      "Title": "Popular Apps that use ASP.NET",
+      "Location": "Room 672",
+      "Time": "11:00am"
+    },
+    {
+      "Title": "Crash Course in ASP.NET",
+      "Location": "Room 13",
+      "Time": "2:00pm"
+    }
+  ]
+
+}
